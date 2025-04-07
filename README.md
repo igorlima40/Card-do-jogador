@@ -66,6 +66,16 @@
             font-size: 14px;
             margin-bottom: 5px;
         }
+        .transfer-history li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 5px;
+        }
+        .transfer-history img {
+            width: 20px;
+            height: 20px;
+        }
     </style>
 </head>
 <body>
@@ -75,11 +85,11 @@
         <div class="position">Goleiro</div>
         <div class="info">
             <div>
-                <img src="bandeira-brasil.png" alt="Brasil">
+                <img src="AddText_04-06-08.49.35.png" alt="Brasil">
                 <div>Brasil</div>
             </div>
             <div>
-                <img src="team_logo.png" alt="Real Concordiense">
+                <img src="3 Sem Título_20250402200322.png" alt="Real Concordiense">
                 <div>Real Concordiense</div>
             </div>
         </div>
@@ -91,12 +101,11 @@
         <div class="transfer-history">
             <h3>Histórico de Transferências</h3>
             <ul>
-                <li>2025 - Real Concordiense</li>
-                <li>2024/2025 - Los Santos</li>
-                <li>2024 - Sporting Sintrial</li>
+                <li><img src="3 Sem Título_20250402200322.png" alt="RC">2025 - Real Concordiense</li>
+                <li><img src="1743962363495.png" alt="LS">2024/2025 - Los Santos</li>
+                <li><img src="1743962429652.png" alt="SS">2024 - Sporting Sintrial</li>
             </ul>
         </div>
     </div>
 </body>
 </html>
-
