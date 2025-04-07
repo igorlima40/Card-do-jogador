@@ -1,134 +1,151 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Igor Lima - Perfil de Jogador</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Igor Lima - Card</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f4f4f4;
+      background-color: #f5f5f5;
       display: flex;
       justify-content: center;
-      padding: 40px;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
     }
+
     .card {
-      background: #fff;
-      width: 360px;
-      border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-      padding: 20px;
+      background-color: white;
+      width: 400px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 25px;
       text-align: center;
     }
-    .top-info {
+
+    .profile-img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .player-name {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .position {
+      font-size: 16px;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    .divider {
+      height: 1px;
+      background-color: #ddd;
+      margin: 20px 0;
+    }
+
+    .info-row {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 20px;
-      padding: 0 10px;
     }
-    .top-info .box {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .top-info img {
-      width: 48px;
-      height: 48px;
-    }
-    .top-info .logo {
-      border-radius: 8px;
-    }
-    h2 {
-      margin-bottom: 4px;
-    }
-    .position {
-      font-size: 16px;
-      color: #444;
-      margin-bottom: 16px;
-    }
-    .middle-info {
-      display: flex;
-      justify-content: space-around;
-      margin: 20px 0;
-    }
-    .middle-info .item {
+
+    .info-col {
+      width: 48%;
       text-align: center;
     }
-    .middle-info .item .big {
-      font-size: 20px;
-      font-weight: bold;
+
+    .flag, .club-logo {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 5px;
     }
-    .history {
-      text-align: left;
-    }
-    .history h3 {
-      font-size: 16px;
-      margin-bottom: 10px;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 4px;
-    }
-    .history-item {
-      display: flex;
-      align-items: center;
-      margin-bottom: 10px;
-    }
-    .history-item img {
-      width: 24px;
-      margin-right: 10px;
-    }
-    .history-item span {
+
+    .label {
       font-size: 14px;
+      color: #777;
+    }
+
+    .value {
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .bottom-info {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+    }
+
+    .bottom-info .info-col {
+      width: 33.3%;
+    }
+
+    .history-title {
+      font-weight: bold;
+      margin-top: 20px;
+      font-size: 16px;
+    }
+
+    .transfer-list {
+      list-style: none;
+      padding: 0;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .transfer-list li {
+      margin-bottom: 5px;
     }
   </style>
 </head>
 <body>
-
   <div class="card">
-    <h2>Igor Lima</h2>
+    <img class="profile-img" src="perfil.png" alt="Foto do jogador">
+    <div class="player-name">Igor Lima</div>
     <div class="position">Goleiro</div>
 
-    <div class="top-info">
-      <div class="box">
-        <img src="https://flagcdn.com/w80/br.png" alt="Bandeira do Brasil" style="border-radius: 50%;">
-        <span>Brasil</span>
+    <div class="info-row">
+      <div class="info-col">
+        <img class="flag" src="bandeira-brasil.png" alt="Brasil">
+        <div class="label">Brasil</div>
       </div>
-      <div class="box">
-        <img class="logo" src="real-concordiense.png" alt="Real Concordiense" width="48">
-        <span style="margin-top: 4px;">Real Concordiense</span>
-      </div>
-    </div>
-
-    <div class="middle-info">
-      <div class="item">
-        <div class="big">15 anos</div>
-        <div style="font-size: 12px;">24/12/2009</div>
-      </div>
-      <div class="item">
-        <div class="big">1,75m</div>
-        <div>Altura</div>
-      </div>
-      <div class="item">
-        <div class="big">2</div>
-        <div>N° Camisa</div>
+      <div class="info-col">
+        <img class="club-logo" src="logo-clube.png" alt="Real Concordiense">
+        <div class="label">Real Concordiense</div>
       </div>
     </div>
 
-    <div class="history">
-      <h3>Histórico de Transferências</h3>
-      <div class="history-item">
-        <img src="real-concordiense.png" alt="Real Concordiense">
-        <span>2025 - Real Concordiense</span>
+    <div class="divider"></div>
+
+    <div class="bottom-info">
+      <div class="info-col">
+        <div class="value">15 anos</div>
+        <div class="label">24/12/2009</div>
       </div>
-      <div class="history-item">
-        <img src="los-santos.png" alt="Los Santos">
-        <span>2024/2025 - Los Santos</span>
+      <div class="info-col">
+        <div class="value">1,75m</div>
+        <div class="label">Altura</div>
       </div>
-      <div class="history-item">
-        <img src="sporting-sintrial.png" alt="Sporting Sintrial">
-        <span>2024 - Sporting Sintrial</span>
+      <div class="info-col">
+        <div class="value">2</div>
+        <div class="label">N° Camisa</div>
       </div>
     </div>
+
+    <div class="history-title">Histórico de Transferências</div>
+    <ul class="transfer-list">
+      <li>2025 - Real Concordiense</li>
+      <li>2024/2025 - Los Santos</li>
+      <li>2024 - Sporting Sintrial</li>
+    </ul>
   </div>
-
 </body>
 </html>
